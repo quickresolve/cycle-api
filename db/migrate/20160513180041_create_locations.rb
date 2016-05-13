@@ -4,8 +4,10 @@ class CreateLocations < ActiveRecord::Migration
       t.string :title
       t.text :desc
       t.string :url
-      t.float :start
-      t.float :end
+      t.float :start_lat
+      t.float :start_long
+      t.float :end_lat
+      t.float :end_long
       t.float :distance
       t.float :elevation
       t.string :terrain
