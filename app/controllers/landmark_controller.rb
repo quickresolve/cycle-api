@@ -1,7 +1,8 @@
 class LandmarkController < ApplicationController
 
-  get '/landmarks/:id' do
-    @landmarks = Landmark.find(params[:id])
+  get '/locations/:location_id/landmarks' do
+    @location = Location.find(params[:location_id])
+    @landmarks = @location.landmarks
     render json: @landmarks
   end
 
