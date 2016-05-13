@@ -1,9 +1,11 @@
-class LandmarkController < ApplicationController
+# module Api
+  class LandmarksController < ApplicationController
 
-  get '/locations/:location_id/landmarks' do
-    @location = Location.find(params[:location_id])
-    @landmarks = @location.landmarks
-    render json: @landmarks
+    def index
+      @location = Location.find(params[:location_id])
+      @landmarks = @location.landmarks
+      render json: @landmarks
+    end
+
   end
-
-end
+# end
