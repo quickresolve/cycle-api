@@ -3,7 +3,7 @@ class CreateLocations < ActiveRecord::Migration
     create_table :locations do |t|
       t.string :title
       t.text :desc
-      t.string :url
+      t.string :image_url
       t.float :start_lat
       t.float :start_long
       t.float :end_lat
