@@ -9,7 +9,8 @@ class CreateLocations < ActiveRecord::Migration
       t.float :end_lat
       t.float :end_long
       t.float :distance
-      t.float :elevation
+      t.integer :elevation_up
+      t.integer :elevation_down
       t.string :terrain
 
       t.timestamps null: false

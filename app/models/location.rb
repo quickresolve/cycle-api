@@ -9,6 +9,7 @@ class Location < ActiveRecord::Base
   validates :end_lat, presence: true
   validates :end_long, presence: true
   validates :distance, presence: true
-  validates :elevation, presence: true
+  validates :elevation_up, presence: true
+  validates :elevation_down, presence: true
   validates :terrain, presence: true
 end
