@@ -40,8 +40,8 @@ ActiveRecord::Schema.define(version: 20160513180217) do
     t.integer  "elevation_up"
     t.integer  "elevation_down"
     t.string   "terrain"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   add_foreign_key "landmarks", "locations"

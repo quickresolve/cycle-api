@@ -69,7 +69,7 @@ Location.create(
                 terrain: "crapi"
 )
 
-Landmakr.create(
+Landmark.create(
                 title: "landmark",
                 desc: "cool place",
                 image_url: "url",
