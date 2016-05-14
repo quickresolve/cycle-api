@@ -68,3 +68,10 @@ Location.create(
                 elevation_down: 223,
                 terrain: "crapi"
 )
+
+Landmakr.create(
+                title: "landmark"
+                desc: "cool place"
+                image_url: "url"
+                location_id: 1
+)
