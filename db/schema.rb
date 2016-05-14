@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20160513180217) do
   create_table "landmarks", force: :cascade do |t|
     t.string   "title"
     t.text     "desc"
+    t.string   "image_url"
     t.integer  "location_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
@@ -30,6 +31,7 @@ ActiveRecord::Schema.define(version: 20160513180217) do
     t.string   "title"
     t.text     "desc"
     t.string   "image_url"
+    t.string   "map_url"
     t.float    "start_lat"
     t.float    "start_long"
     t.float    "end_lat"

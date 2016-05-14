@@ -3,4 +3,5 @@ class Landmark < ActiveRecord::Base
 
   validates :title, presence: true
   validates :desc, presence: true
+  validates :image_url, presence: true
 end

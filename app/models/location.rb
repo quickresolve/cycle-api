@@ -4,6 +4,7 @@ class Location < ActiveRecord::Base
   validates :title, presence: true
   validates :desc, presence: true
   validates :image_url, presence: true
+  validates :map_url, presence: true
   validates :start_lat, presence: true
   validates :start_long, presence: true
   validates :end_lat, presence: true
