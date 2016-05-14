@@ -70,8 +70,8 @@ Location.create(
 )
 
 Landmakr.create(
-                title: "landmark"
-                desc: "cool place"
-                image_url: "url"
+                title: "landmark",
+                desc: "cool place",
+                image_url: "url",
                 location_id: 1
 )
